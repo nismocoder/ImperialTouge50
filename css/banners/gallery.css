@@ -17,5 +17,26 @@ div.gallery img {
       width: auto;
       background-position:center -120px;
       background-attachment: fixed;
-    
+    }
+
+    @media only screen and (max-width:550px) {
+        .hero-image{
+            grid-area: hero-image;
+            background-image: url('../../assets/images/29export.png');
+              background-repeat: no-repeat;
+              background-size: 110%;
+              height: 200px;
+              width: auto;
+              background-position:center 20px;
+              background-attachment: fixed;
+            padding-bottom:20px;
+            }
+
+            div.gallery {
+                display: flex;
+                flex-direction: column;
+                position: inline;
+                width: 100vw;
+                justify-content: center;
+            }
     }

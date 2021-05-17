@@ -206,4 +206,16 @@
       width: 200px;
       height: 80px;
     }
+
+    .content {
+      grid-area: content;
+      background: url("../../assets/images/rps13banner/rps13.jpg");
+      height: 780px;
+      width: auto;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto;
+      background-attachment: scroll;
+      overflow: hidden;
+    }
   }

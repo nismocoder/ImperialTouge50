@@ -96,3 +96,40 @@
   .nav-sidebar ul li, .nav-sidebar ul li a:hover {
     background-color: #227;
   }
+
+  @media only screen and (max-width:550px) {
+    .nav {
+      grid-area: nav;
+    }
+    .nav-main {
+        width: 100vw;
+        height: 50px;
+        top: 0;
+        position: fixed;
+        background-color: #fff;
+        display: flex;
+        flex-wrap: nowrap;
+        z-index: 1000;
+    }
+    .nav-main ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 10px;
+    }
+    
+    .nav-main ul li {
+        list-style: none;
+        line-height: 50px;
+    }
+    
+    .nav-main ul li a {
+        display: block;
+        height: 100%;
+        padding: 0 10px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #4954bb;
+        font-family: arial;
+        font-size: 16px;
+    }
+}

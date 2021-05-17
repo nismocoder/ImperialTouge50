@@ -4,6 +4,26 @@
     justify-content: center;
     background-color:  rgb(196, 196, 196);
     font-size: 22px;
-    padding-top: 15px;
+    padding-top: 0;
     text-decoration: underline;
+    padding-top:10px;
+}
+
+@media only screen and (max-width:550px) {
+.header {
+    grid-area: header;
+    display: flex;
+    font-family: Impact, sans-serif;
+    background-color: rgb(196, 196, 196);
+    text-align: center;
+    justify-content: center;
+    color: rgb(35, 35, 51);
+    position: relative;
+    font-size: 26px;
+    text-decoration: underline;
+    width: 100vw;
+    height:80px;
+    padding-top: 25px;
+    margin-top: 10px;
+  }
 }

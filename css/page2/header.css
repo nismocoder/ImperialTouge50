@@ -17,7 +17,17 @@ div.slapheader p {
     flex-direction: row;
     flex-flow: row;
     display: flex;
-    align-content: space-between;
-    
+    align-content: space-between; 
 }
 
+@media only screen and (max-width:550px) {
+    div.slapheader {
+        color: #4954bb;
+        display: none;
+        flex-direction: column;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-content: space-between;
+        padding-top: 8px;
+    }
+}
