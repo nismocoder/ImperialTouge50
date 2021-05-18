@@ -27,19 +27,35 @@
   }
   
   h3 {
-    height: 450px;
-    width: 75%;
-    top: 19.7%;
-    left: 200px;
-    background-color: rgb(165, 161, 161);
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* height: 96.3%; */
+    height: 600px;
+}
+
+
+
+ h3::before {
+    content: '';
     position: absolute;
+    background-attachment: scroll;
+    top: 140px;
+    bottom: 0;
+    left: 10%;
+    right: 0;
+    /* background-color: cornsilk; */
     opacity: 0.7;
-    cursor: auto;
-  }
+    width: 80%;
+    background-color: rgb(168, 168, 168);
+    border: 2px solid rgba (30, 85, 250, 0.47);
+    overflow: hidden;
+}
   
   div.pheader {
-    top: 25%;
-    right: 28%;
+    top: 32%;
+    right: 25.5%;
     display: block;
     color: black;
     font-size: 34px;
@@ -50,8 +66,8 @@
   }
   
   div.price {
-    top: 64%;
-    right: 42%;
+    top: 82.5%;
+    right: 40%;
     display: block;
     color: black;
     font-size: 18px;
@@ -63,8 +79,8 @@
   /* top description   */
   
   div.pDescription {
-    top: 36%;
-    right: 30%;
+    top: 47%;
+    right: 27.5%;
     display: block;
     color: black;
     font-size: 20px;
@@ -72,16 +88,16 @@
     position: absolute;
     text-align: left;
   }
-  
+   
   div.pDescription2 {
-    top: 54%;
-    right: 26%;
+    top: 71%;
+    right: 24%;
     display: block;
     color: black;
     font-size: 20px;
-    position: absolute;
-    text-align: center;
     font-weight: bold;
+    position: absolute;
+    text-align: left;
   }
   
   .cartButton {
@@ -109,44 +125,72 @@
   }
   
   .checkOutFormRetainer {
-    top: 65%;
-    right: 33%;
+    top: 85%;
+    right: 30%;
     position: absolute;
     width: 150px;
     height: 50px;
   }
   
+
   
-  
-  
+
   
   
   @media (max-width: 1200px) {
-    h3 {
-      height: 600px;
-      width: 70%;
-      top: 110px;
-      left: 15%;
-      background-color: rgb(165, 161, 161);
+    /* h3 {
+      height: 500px;
+      width: 90%;
+      top: 140px;
+      left: 5%;
+      background-color: white;
       position: absolute;
       opacity: 0.7;
       cursor: default;
-    }
+      background-attachment: scroll;
+      overflow: hidden;
+    } */
+
+    h3 {
+      position: relative;
+      display: flex;
+      justify-content: flex-start;
+      /* align-items: center; */
+      /* height: 96.3%; */
+      height: 700px;
+  }
+  
+  
+  
+   h3::before {
+      content: '';
+      position: absolute;
+      background-attachment: scroll;
+      top: 100px;
+      bottom: 0px;
+      left: 18px;
+      right: 0;
+      /* background-color: cornsilk; */
+      opacity: 0.7;
+      width: 90%;
+      background-color: rgb(168, 168, 168);
+      border: 2px solid rgba (30, 85, 250, 0.47);
+      overflow: hidden;
+  }
   
     div.pheader {
-      top: 16%;
-      right: 28%;
+      top: 20%;
+      right: 26%;
       display: block;
       color: black;
-      font-size: 34px;
+      font-size: 32px;
       position: absolute;
       text-decoration: underline;
       font-weight: bold;
-      text-align:center;
     }
     div.price {
-      top: 90%;
-      left: 40%;
+      top: 77%;
+      left: 44%;
       display: block;
       color: black;
       font-size: 18px;
@@ -156,8 +200,8 @@
     }
     /* top description   */
     div.pDescription {
-      top: 75%;
-      right: 40%;
+      top: 62%;
+      right: 36%;
       display: block;
       color: black;
       font-size: 17px;
@@ -167,14 +211,13 @@
       float: left;
     }
     div.pDescription2 {
-      top: 70%;
+      top: 56%;
       right: 24%;
-      display: block;
+      display: none;
       color: black;
       font-size: 15px;
       position: absolute;
       text-align: left;
-      font-weight: bold;
     }
     .cartButton {
       background-color: #4d2ca7;
@@ -190,22 +233,23 @@
     }
     .cartButton {
       width: 120px;
-      top: 82%;
-      right: 13%;
+      top: 50%;
+      left: 52%;
       position: absolute;
     }
     .numForm {
       width: 70px;
-      top: 93%;
-      left: 15%;
+      top: 30%;
+      left: 42%;
       position: absolute;
     }
   
     .checkOutFormRetainer {
-      top: 83%;
+      display: flex;
+      top: 73%;
       right: 42%;
       position: absolute;
       width: 200px;
-      height: 80px;
+      height: 180px;
     }
   }

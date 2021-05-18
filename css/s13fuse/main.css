@@ -25,30 +25,46 @@ html, body {
 }
 
 h3 {
-  height: 430px;
-  width: 55%;
-  top: 19.7%;
-  left: 340px;
-  background-color: white;
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  /* align-items: center; */
+  /* height: 96.3%; */
+  height: 600px;
+}
+
+
+
+h3::before {
+  content: '';
   position: absolute;
+  background-attachment: scroll;
+  top: 140px;
+  bottom: 0;
+  left: 10%;
+  right: 0;
+  /* background-color: cornsilk; */
   opacity: 0.7;
-  cursor: auto;
+  width: 80%;
+  background-color: #ffff;
+  border: 2px solid rgba (30, 85, 250, 0.47);
+  overflow: hidden;
 }
 
 div.pheader {
-  top: 25%;
-  right: 30%;
+  top: 32%;
+  right: 27.5%;
   display: block;
   color: black;
   font-size: 34px;
   position: absolute;
   text-decoration: underline;
   font-weight: bold;
-  text-align: center;
+  text-align:center;
 }
 
 div.price {
-  top: 64%;
+  top: 81.5%;
   right: 42%;
   display: block;
   color: black;
@@ -61,8 +77,8 @@ div.price {
 /* top description   */
 
 div.pDescription {
-  top: 37%;
-  right: 32%;
+  top: 46%;
+  right: 29.5%;
   display: block;
   color: black;
   font-size: 20px;
@@ -70,10 +86,10 @@ div.pDescription {
   position: absolute;
   text-align: left;
 }
-
+ 
 div.pDescription2 {
-  top: 56%;
-  right: 29%;
+  top: 71%;
+  right: 28%;
   display: block;
   color: black;
   font-size: 20px;
@@ -107,37 +123,72 @@ div.pDescription2 {
 }
 
 .checkOutFormRetainer {
-  top: 65%;
-  right: 33%;
+  top: 83%;
+  right: 31%;
   position: absolute;
   width: 150px;
   height: 50px;
 }
 
+
+
+
+
+
 @media (max-width: 1200px) {
-  h3 {
-    height: 585px;
-    width: 60%;
-    top: 65px;
-    left: 15%;
+  /* h3 {
+    height: 500px;
+    width: 90%;
+    top: 140px;
+    left: 5%;
     background-color: white;
     position: absolute;
     opacity: 0.7;
     cursor: default;
-  }
+    background-attachment: scroll;
+    overflow: hidden;
+  } */
+
+  h3 {
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    /* height: 96.3%; */
+    height: 700px;
+}
+
+
+
+ h3::before {
+    content: '';
+    position: absolute;
+    background-attachment: scroll;
+    top: 100px;
+    bottom: 0px;
+    left: 18px;
+    right: 0;
+    /* background-color: cornsilk; */
+    opacity: 0.7;
+    width: 90%;
+    background-color: #ffff;
+    border: 2px solid rgba (30, 85, 250, 0.47);
+    overflow: hidden;
+}
+
   div.pheader {
-    top: 10%;
-    right: 35%;
+    top: 15%;
+    right: 26%;
     display: block;
     color: black;
     font-size: 34px;
     position: absolute;
     text-decoration: underline;
     font-weight: bold;
-  }
+  } 
   div.price {
-    top: 83%;
-    left: 20%;
+    top: 81.5%;
+    left: 44%;
     display: block;
     color: black;
     font-size: 18px;
@@ -147,8 +198,8 @@ div.pDescription2 {
   }
   /* top description   */
   div.pDescription {
-    top: 70%;
-    right: 44%;
+    top: 67.5%;
+    right: 36%;
     display: block;
     color: black;
     font-size: 17px;
@@ -158,15 +209,14 @@ div.pDescription2 {
     float: left;
   }
   div.pDescription2 {
-    top: 68%;
-    right: 35%;
-    display: block;
+    top: 56%;
+    right: 24%;
+    display: none;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     position: absolute;
     text-align: left;
   }
-
   .cartButton {
     background-color: #4d2ca7;
     border: none;
@@ -181,21 +231,23 @@ div.pDescription2 {
   }
   .cartButton {
     width: 120px;
-    top: 75%;
-    right: 13%;
+    top: 50%;
+    left: 52%;
     position: absolute;
   }
   .numForm {
     width: 70px;
-    top: 87%;
-    left: 15%;
+    top: 30%;
+    left: 42%;
     position: absolute;
   }
+ 
   .checkOutFormRetainer {
-    top: 76%;
-    right: 50%;
+    display: flex;
+    top: 78%;
+    right: 42%;
     position: absolute;
     width: 200px;
-    height: 80px;
+    height: 180px;
   }
 }

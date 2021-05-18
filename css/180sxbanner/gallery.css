@@ -31,11 +31,13 @@ div.productpic {
     div.productpic {
       margin: auto;
       position:inline-block;
-      width: 480px;
+      width: auto;
       position: absolute;
-      left: 0%;
-      top: 160px;
+      left: 0;
+      top: 220px; 
       border: none;
+      overflow: hidden;
+      justify-content: center;
     }
     
     
@@ -44,9 +46,10 @@ div.productpic {
     }
     
     div.productpic img {
-      width: 100%;
-      height: auto;
-      left:600px;
+        width: 100%;
+        height: auto;
+        display: inline;
+        overflow: hidden;
     }
     
     div.desc {

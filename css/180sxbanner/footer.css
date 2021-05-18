@@ -135,6 +135,8 @@ justify-content: center;
        position: relative;
        justify-content: space-around;
        align-items: center;
+       margin-top: 0px;
+       padding-top: 0px;
 }
 
 /* ----------------------------------- */
